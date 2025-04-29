@@ -1,49 +1,91 @@
 "use client";
 
 import Link from 'next/link';
+import { useState } from 'react';
+import { FaHome, FaFire, FaList, FaQuestion, FaUserPlus } from 'react-icons/fa';
+import { HiMenu, HiX } from 'react-icons/hi';
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <nav className="flex justify-between items-center px-6 py-4 bg-black text-white">
-      {/* Logo */}
-      <div className="flex flex-col items-center">
-        <Link href="/">
-          <h1 className="text-4xl font-bold text-red-600">
-            DISTRACTION TV
-          </h1>
-        </Link>
-        <p className="text-sm">
-          Bienvenue sur le meilleur site de BD et dessins animés
-        </p>
+    <nav className="bg-gradient-to-r from-pink-500 via-purple-500 to-purple-600 text-white shadow-lg fixed top-0 left-0 right-0 z-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between h-16">
+          {/* Logo */}
+          <div className="flex items-center">
+            <Link href="/" className="flex items-center">
+              <span className="text-xl font-bold">DISTRACTION TV</span>
+            </Link>
+          </div>
+
+          {/* Desktop Navigation Links */}
+          <div className="hidden md:flex items-center justify-center space-x-8">
+            <NavLink href="/" icon={<FaHome className="mr-1" />} text="Home" />
+            <NavLink href="/tendances" icon={<FaFire className="mr-1" />} text="Tendances" />
+            <NavLink href="/categories" icon={<FaList className="mr-1" />} text="Categories" />
+            <NavLink href="/faq" icon={<FaQuestion className="mr-1" />} text="FAQ" />
+            <NavLink href="/join" icon={<FaUserPlus className="mr-1" />} text="Join US" />
+          </div>
+
+          {/* Mobile menu button */}
+          <div className="md:hidden flex items-center">
+            <button
+              onClick={toggleMenu}
+              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-purple-600"
+              aria-expanded="false"
+            >
+              <span className="sr-only">Open main menu</span>
+              {isMenuOpen ? (
+                <HiX className="block h-6 w-6" aria-hidden="true" />
+              ) : (
+                <HiMenu className="block h-6 w-6" aria-hidden="true" />
+              )}
+            </button>
+          </div>
+        </div>
       </div>
 
-      {/* Navigation Links */}
-      <div className="hidden md:flex space-x-8">
-        <NavLink href="/">ACCUEIL</NavLink>
-        <NavLink href="/series">TOUTES LES SÉRIES</NavLink>
-        <NavLink href="/titres">TOUS LES TITRES</NavLink>
-        <NavLink href="/faq">FAQ</NavLink>
-        <NavLink href="/contact">CONTACT</NavLink>
-      </div>
-
-      {/* Auth Buttons */}
-      <div className="flex space-x-4">
-        <button className="px-4 py-2 bg-white text-black rounded hover:bg-gray-200">
-          CONNEXION
-        </button>
-        <button className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700">
-          INSCRIVEZ-VOUS
-        </button>
+      {/* Mobile menu, show/hide based on menu state */}
+      <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <MobileNavLink href="/" icon={<FaHome className="mr-2" />} text="Home" />
+          <MobileNavLink href="/tendances" icon={<FaFire className="mr-2" />} text="Tendances" />
+          <MobileNavLink href="/categories" icon={<FaList className="mr-2" />} text="Categories" />
+          <MobileNavLink href="/faq" icon={<FaQuestion className="mr-2" />} text="FAQ" />
+          <MobileNavLink href="/join" icon={<FaUserPlus className="mr-2" />} text="Join US" />
+        </div>
       </div>
     </nav>
   );
 };
 
-// Navigation Link Component
-const NavLink = ({ href, children }: { href: string, children: React.ReactNode }) => {
+// Desktop Navigation Link Component
+const NavLink = ({ href, icon, text }: { href: string, icon: React.ReactNode, text: string }) => {
   return (
-    <Link href={href} className="hover:text-red-500 transition-colors">
-      {children}
+    <Link 
+      href={href} 
+      className="flex items-center px-3 py-2 rounded-md text-sm font-medium hover:bg-purple-600 transition-colors"
+    >
+      {icon}
+      {text}
+    </Link>
+  );
+};
+
+// Mobile Navigation Link Component
+const MobileNavLink = ({ href, icon, text }: { href: string, icon: React.ReactNode, text: string }) => {
+  return (
+    <Link
+      href={href}
+      className="flex items-center px-3 py-2 rounded-md text-base font-medium hover:bg-purple-600 transition-colors"
+    >
+      {icon}
+      {text}
     </Link>
   );
 };

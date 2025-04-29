@@ -7,25 +7,25 @@ const featuredComics = [
   {
     id: 1,
     title: 'Aventures Extraordinaires',
-    image: '/assets/slide (6).jpg',
+    image: '/assets/slide02.jpg',
     price: '19,99 €'
   },
   {
     id: 2,
     title: 'Légendes du Passé',
-    image: '/assets/slide (7).jpg',
+    image: '/assets/slide03.jpeg',
     price: '24,50 €'
   },
   {
     id: 3,
     title: 'Monde Fantastique',
-    image: '/assets/slide (8).jpg',
+    image: '/assets/slide02.jpg',
     price: '22,90 €'
   },
   {
     id: 4,
     title: 'Histoire Secrète',
-    image: '/assets/slide (9).jpg',
+    image: '/assets/slide03.jpeg',
     price: '18,95 €'
   }
 ];
