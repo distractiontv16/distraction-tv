@@ -78,14 +78,16 @@ const HeroSlider = () => {
           alt={sliderData[currentIndex].title}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, 100vw"
-          quality={90}
+          quality={100}
           priority
           style={{ 
             objectFit: 'cover',
-            objectPosition: 'center',
+            objectPosition: 'center top',
           }}
           onLoadingComplete={() => setIsLoading(false)}
-          className="transition-transform duration-500 ease-in-out hover:scale-105"
+          className="transition-transform duration-500 ease-in-out"
+          unoptimized={true}
+          loading="eager"
         />
         
         {/* Loading indicator */}

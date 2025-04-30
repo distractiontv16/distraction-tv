@@ -1,6 +1,7 @@
 import { Suspense } from 'react';
 import Navbar from './components/Navbar';
 import HeroSlider from './components/HeroSlider';
+import FeaturedTitles from './components/FeaturedTitles';
 import FeaturedComics from './components/FeaturedComics';
 import Footer from './components/Footer';
 
@@ -10,14 +11,25 @@ export default function Home() {
       {/* Navbar - Fixed at the top */}
       <Navbar />
       
-      {/* Hero Section - Responsive height based on viewport */}
-      <section className="w-full mt-16">
+      {/* Hero Section - Responsive height based on viewport with increased margin */}
+      <section className="w-full mt-20 md:mt-24">
         <Suspense fallback={
           <div className="h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] xl:h-[85vh] bg-gray-200 flex items-center justify-center">
             <div className="w-10 h-10 border-4 border-purple-500 border-t-transparent rounded-full animate-spin"></div>
           </div>
         }>
           <HeroSlider />
+        </Suspense>
+      </section>
+      
+      {/* Featured Titles Section */}
+      <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+        <Suspense fallback={
+          <div className="h-[300px] bg-white flex items-center justify-center">
+            <div className="w-10 h-10 border-4 border-purple-500 border-t-transparent rounded-full animate-spin"></div>
+          </div>
+        }>
+          <FeaturedTitles />
         </Suspense>
       </section>
       
