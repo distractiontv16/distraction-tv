@@ -2,8 +2,12 @@ import { Suspense } from 'react';
 import Navbar from './components/Navbar';
 import HeroSlider from './components/HeroSlider';
 import FeaturedTitles from './components/FeaturedTitles';
-import FeaturedComics from './components/FeaturedComics';
+import FeaturedSeries from './components/FeaturedSeries';
+import TrendingSeries from './components/TrendingSeries';
+import MoreSeries from './components/MoreSeries';
 import Footer from './components/Footer';
+import CallToAction from './components/CallToAction';
+import ComingSoon from './components/ComingSoon';
 
 export default function Home() {
   return (
@@ -23,7 +27,7 @@ export default function Home() {
       </section>
       
       {/* Featured Titles Section */}
-      <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+      <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
         <Suspense fallback={
           <div className="h-[300px] bg-white flex items-center justify-center">
             <div className="w-10 h-10 border-4 border-purple-500 border-t-transparent rounded-full animate-spin"></div>
@@ -33,14 +37,58 @@ export default function Home() {
         </Suspense>
       </section>
       
-      {/* Featured Comics */}
-      <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16">
+      {/* Featured Series Section */}
+      <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
         <Suspense fallback={
-          <div className="h-[300px] sm:h-[350px] md:h-[400px] bg-gray-100 flex items-center justify-center">
+          <div className="h-[300px] bg-white flex items-center justify-center">
             <div className="w-10 h-10 border-4 border-purple-500 border-t-transparent rounded-full animate-spin"></div>
           </div>
         }>
-          <FeaturedComics />
+          <FeaturedSeries />
+        </Suspense>
+      </section>
+      
+      {/* Trending Series Section - Maintenant avec les BD disponibles */}
+      <section className="w-full max-w-7xl mx-auto mt-12">
+        <Suspense fallback={
+          <div className="h-[300px] bg-white flex items-center justify-center">
+            <div className="w-10 h-10 border-4 border-purple-500 border-t-transparent rounded-full animate-spin"></div>
+          </div>
+        }>
+          <TrendingSeries />
+        </Suspense>
+      </section>
+      
+      {/* More Series Section */}
+      <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+        <Suspense fallback={
+          <div className="h-[300px] bg-white flex items-center justify-center">
+            <div className="w-10 h-10 border-4 border-purple-500 border-t-transparent rounded-full animate-spin"></div>
+          </div>
+        }>
+          <MoreSeries />
+        </Suspense>
+      </section>
+      
+      {/* Call to Action */}
+      <section className="w-full mt-12">
+        <Suspense fallback={
+          <div className="h-[200px] bg-white flex items-center justify-center">
+            <div className="w-10 h-10 border-4 border-purple-500 border-t-transparent rounded-full animate-spin"></div>
+          </div>
+        }>
+          <CallToAction />
+        </Suspense>
+      </section>
+      
+      {/* Coming Soon */}
+      <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+        <Suspense fallback={
+          <div className="h-[300px] bg-white flex items-center justify-center">
+            <div className="w-10 h-10 border-4 border-purple-500 border-t-transparent rounded-full animate-spin"></div>
+          </div>
+        }>
+          <ComingSoon />
         </Suspense>
       </section>
       

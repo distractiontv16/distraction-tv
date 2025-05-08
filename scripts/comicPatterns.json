@@ -1,0 +1,156 @@
+[
+  {
+    "comicId": "caroline",
+    "title": "Caroline",
+    "author": "CrazyDad3D",
+    "categories": ["3D", "Adulte", "Romance"],
+    "description": "L'histoire captivante de Caroline dans un monde plein de mystères et de découvertes",
+    "cover_image": "https://res.cloudinary.com/dh8f5kqra/image/upload/v1746236406/mesBD/Categorie/3D/CrazyDad3D%20Caroline/Chapitre%2001/01-001.jpg",
+    "chapters": [
+      {
+        "chapterNumber": 1,
+        "title": "Chapitre 1",
+        "baseUrl": "https://res.cloudinary.com/dh8f5kqra/image/upload/v1746236406/mesBD/Categorie/3D/CrazyDad3D%20Caroline/Chapitre%2001",
+        "filenamePattern": "01-{n}.jpg",
+        "totalPages": 152
+      },
+      {
+        "chapterNumber": 2,
+        "title": "Chapitre 2",
+        "baseUrl": "https://res.cloudinary.com/dh8f5kqra/image/upload/v1746236406/mesBD/Categorie/3D/CrazyDad3D%20Caroline/Chapitre%2002",
+        "filenamePattern": "02-{n}.jpg",
+        "totalPages": 158
+      }
+    ]
+  },
+  {
+    "comicId": "emmas-corruption",
+    "title": "Emma's Corruption",
+    "author": "Antalore42",
+    "categories": ["3D", "Adulte"],
+    "description": "L'histoire d'Emma et son chemin vers la corruption",
+    "cover_image": "https://res.cloudinary.com/dh8f5kqra/image/upload/v1746157820/mesBD/Categorie/3D/Antalore42%20Emma%27s%20Corruption/Chapitre%2001/01-001.jpg",
+    "chapters": [
+      {
+        "chapterNumber": 1,
+        "title": "Chapitre 1",
+        "baseUrl": "https://res.cloudinary.com/dh8f5kqra/image/upload/v1746157820/mesBD/Categorie/3D/Antalore42%20Emma%27s%20Corruption/Chapitre%2001",
+        "filenamePattern": "01-{n}.jpg",
+        "totalPages": 28
+      },
+      {
+        "chapterNumber": 2,
+        "title": "Chapitre 2",
+        "baseUrl": "https://res.cloudinary.com/dh8f5kqra/image/upload/v1746157885/mesBD/Categorie/3D/Antalore42%20Emma%27s%20Corruption/Chapitre%2002",
+        "filenamePattern": "02-{n}.jpg",
+        "totalPages": 36
+      },
+      {
+        "chapterNumber": 3,
+        "title": "Chapitre 3",
+        "is_protected": true,
+        "is_pdf": true,
+        "pdf_url": "https://online.pubhtml5.com/bozze/vtgx/"
+      },
+      {
+        "chapterNumber": 4,
+        "title": "Chapitre 4",
+        "is_protected": true,
+        "is_pdf": true,
+        "pdf_url": "https://online.pubhtml5.com/yfubs/irwd/"
+      }
+    ]
+  },
+  {
+    "comicId": "the-new-neighbors",
+    "title": "The New Neighbors",
+    "author": "Antalore42",
+    "categories": ["3D", "Aventure"],
+    "description": "Une histoire de nouveaux voisins et leurs découvertes",
+    "cover_image": "https://res.cloudinary.com/dh8f5kqra/image/upload/v1746157969/mesBD/Categorie/3D/Antalore42%20The%20New%20Neighbors/Chapitre%2001/01-001.jpg",
+    "chapters": [
+      {
+        "chapterNumber": 1,
+        "title": "Chapitre 1",
+        "baseUrl": "https://res.cloudinary.com/dh8f5kqra/image/upload/v1746157969/mesBD/Categorie/3D/Antalore42%20The%20New%20Neighbors/Chapitre%2001",
+        "filenamePattern": "01-{n}.jpg",
+        "totalPages": 32
+      },
+      {
+        "chapterNumber": 2,
+        "title": "Chapitre 2",
+        "baseUrl": "https://res.cloudinary.com/dh8f5kqra/image/upload/v1746158042/mesBD/Categorie/3D/Antalore42%20The%20New%20Neighbors/Chapitre%2002",
+        "filenamePattern": "02-{n}.jpg",
+        "totalPages": 31
+      }
+    ]
+  },
+  {
+    "comicId": "clarice",
+    "title": "Clarice",
+    "author": "CrazyDad3D",
+    "categories": ["3D", "Adulte"],
+    "description": "L'histoire captivante de Clarice",
+    "cover_image": "https://res.cloudinary.com/dh8f5kqra/image/upload/v1746237017/mesBD/Categorie/3D/CrazyDad3D%20Clarice/Chapitre%2001/01-001.jpg",
+    "chapters": [
+      {
+        "chapterNumber": 1,
+        "title": "Chapitre 1",
+        "baseUrl": "https://res.cloudinary.com/dh8f5kqra/image/upload/v1746237017/mesBD/Categorie/3D/CrazyDad3D%20Clarice/Chapitre%2001",
+        "filenamePattern": "01-{n}.jpg",
+        "totalPages": 20
+      }
+    ]
+  },
+  {
+    "comicId": "daddy-crazy-desire",
+    "title": "Daddy, Crazy Desire",
+    "author": "CrazyDad3D",
+    "categories": ["3D", "Adulte"],
+    "description": "L'histoire captivante de Daddy, Crazy Desire",
+    "cover_image": "https://res.cloudinary.com/dh8f5kqra/image/upload/v1746237552/mesBD/Categorie/3D/CrazyDad3D%20Daddy%2C%20Crazy%20Desire/Chapitre%2001/01-001.jpg",
+    "chapters": [
+      {
+        "chapterNumber": 1,
+        "title": "Chapitre 1",
+        "baseUrl": "https://res.cloudinary.com/dh8f5kqra/image/upload/v1746237552/mesBD/Categorie/3D/CrazyDad3D%20Daddy%2C%20Crazy%20Desire/Chapitre%2001",
+        "filenamePattern": "01-{n}.jpg",
+        "totalPages": 20
+      }
+    ]
+  },
+  {
+    "comicId": "dear-older-sister",
+    "title": "Dear Older Sister",
+    "author": "CrazyDad3D",
+    "categories": ["3D", "Adulte"],
+    "description": "L'histoire captivante de Dear Older Sister",
+    "cover_image": "https://res.cloudinary.com/dh8f5kqra/image/upload/v1746237927/mesBD/Categorie/3D/CrazyDad3D%20Dear%20Older%20Sister/Chapitre%2001/01-001.jpg",
+    "chapters": [
+      {
+        "chapterNumber": 1,
+        "title": "Chapitre 1",
+        "baseUrl": "https://res.cloudinary.com/dh8f5kqra/image/upload/v1746237927/mesBD/Categorie/3D/CrazyDad3D%20Dear%20Older%20Sister/Chapitre%2001",
+        "filenamePattern": "01-{n}.jpg",
+        "totalPages": 20
+      }
+    ]
+  },
+  {
+    "comicId": "doctor-brandie",
+    "title": "Doctor Brandie",
+    "author": "CrazyDad3D",
+    "categories": ["3D", "Adulte"],
+    "description": "L'histoire captivante de Doctor Brandie",
+    "cover_image": "https://res.cloudinary.com/dh8f5kqra/image/upload/v1746238373/mesBD/Categorie/3D/CrazyDad3D%20Doctor%20Brandie/Chapitre%2001/01-001.jpg",
+    "chapters": [
+      {
+        "chapterNumber": 1,
+        "title": "Chapitre 1",
+        "baseUrl": "https://res.cloudinary.com/dh8f5kqra/image/upload/v1746238373/mesBD/Categorie/3D/CrazyDad3D%20Doctor%20Brandie/Chapitre%2001",
+        "filenamePattern": "01-{n}.jpg",
+        "totalPages": 20
+      }
+    ]
+  }
+] 
